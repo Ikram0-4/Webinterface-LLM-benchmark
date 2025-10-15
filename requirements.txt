@@ -1,0 +1,6 @@
+flask
+anthropic
+mistralai
+google-generativeai
+groq
+pandas
