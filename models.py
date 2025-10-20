@@ -12,7 +12,10 @@ load_dotenv()
 
 CLAUDE_API_KEY = os.getenv("CLAUDE_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") 
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY") 
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY") 
+DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 MODELS = {
     "Claude Sonnet": {"provider": "claude", "model": "claude-sonnet-4-6"},
