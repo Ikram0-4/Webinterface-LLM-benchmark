@@ -19,8 +19,14 @@ DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 
 MODELS = {
     "Claude Sonnet": {"provider": "claude", "model": "claude-sonnet-4-6"},
-    "Llama 70B (Meta)": {"provider": "groq", "model": "llama-3.3-70b-versatile"}
+    "Llama 70B (Meta)": {"provider": "groq", "model": "llama-3.3-70b-versatile"},
+    "Mistral Large": {"provider": "mistral", "model": "mistral-large-latest"},
+    "Gemini Flash": {"provider": "gemini", "model":  "gemini-1.5-flash"},
+    "ChatGPT": {"provider": "openai", "model": "gpt-4o"},
+    "DeepSeek": {"provider": "deepseek", "model": "deepseek-chat"},
 }
+    
+
 claude_clt = anthropic.Anthropic(api_key=CLAUDE_API_KEY)
 groq_clt = Groq(api_key=GROQ_API_KEY)
 
